@@ -1,27 +1,5 @@
-var num1 = Number(window.prompt("Enter first number: "));
-var num2 = Number(window.prompt("Enter second number: "));
-var op = window.prompt("Enter your operator: ");
-var result = 0;
+var num = Number(window.prompt("Enter Number: "));
 
-switch(op) {
-    case '+':
-        result = num1 + num2;
-        break;
-    
-    case '-':
-        result = num1 - num2;
-        break;
-    
-    case '*':
-        result = num1 * num2;
-        break;    
-    
-    case '/':
-        result = (num1 / num2).toFixed(2);
-        break;
-    
-    default:
-        console.log("invalid operator");
+for(var i = 0;  i <= 10; i++) {
+    console.log(i + " x " + num + " = " + i*num);
 }
-
-console.log("Result = " + result);
